@@ -35,10 +35,8 @@ public class DashBoardActivity extends AppCompatActivity {
     private ImageSwitcher mImageSwitcherView;
     private Gallery mGalleryView;
     private Button mBtnViewSpec;
-
     private TextView mTxtSlideSunRoofTitle;
     private LinearLayout mLytSlideSunRoofView;
-
     private TextView mTxtPanoramicRoofTitle;
     private LinearLayout mLytPanoramicRoofView;
 
