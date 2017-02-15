@@ -1,0 +1,18 @@
+<resources>
+    <string name="app_name">Inteva</string>
+    <string name="action_settings">Settings</string>
+
+    <!--Activity Names-->
+    <string name="title_activity_splash">Splash</string>
+    <string name="title_activity_login">Login</string>
+    <string name="title_activity_dash_board">Roof Systems</string>
+
+    <!--Login String-->
+
+    <string name="welcome">Welcome</string>
+    <string name="username">Username</string>
+    <string name="password">Password</string>
+
+    <!--DashBoard Strings-->
+    <string name="view_spec">View Specifications</string>
+</resources>

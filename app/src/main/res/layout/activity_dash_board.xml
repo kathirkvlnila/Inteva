@@ -1,0 +1,397 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/content_dash_board"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context="com.android.inteva.DashBoardActivity">
+
+    <android.support.design.widget.AppBarLayout
+        android:layout_width="match_parent"
+        android:layout_height="?attr/actionBarSize">
+
+        <android.support.v7.widget.Toolbar
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@color/colorPrimary">
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <ImageButton
+                    android:id="@+id/logoutBtnId"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:background="@android:color/transparent"
+                    android:src="@drawable/ic_logout" />
+
+                <TextView
+                    android:id="@+id/homeTitleId"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerHorizontal="true"
+                    android:layout_centerVertical="true"
+                    android:text="Roof Systems"
+                    android:textColor="@color/white"
+                    android:textSize="25sp" />
+            </RelativeLayout>
+
+        </android.support.v7.widget.Toolbar>
+
+    </android.support.design.widget.AppBarLayout>
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <include layout="@layout/layout_bg" />
+
+        <android.support.v4.widget.NestedScrollView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            app:layout_behavior="@string/appbar_scrolling_view_behavior">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:weightSum="1">
+
+                <ScrollView
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="0.5">
+
+                    <RelativeLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content">
+
+                        <LinearLayout
+                            android:id="@+id/firstLytId"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="50dp"
+                            android:weightSum="1">
+
+                            <RelativeLayout
+                                android:layout_width="0dp"
+                                android:layout_height="match_parent"
+                                android:layout_weight="0.5"
+                                android:background="#55000000"
+                                android:paddingBottom="5dp"
+                                android:paddingTop="5dp">
+
+                                <TextView
+                                    android:id="@+id/firstTitleId"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_alignParentTop="true"
+                                    android:paddingLeft="25dp"
+                                    android:text="Tilt   Slide Sunroof"
+                                    android:textColor="@color/colorPrimaryDark"
+                                    android:textSize="25sp" />
+
+                                <LinearLayout
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:layout_below="@+id/firstTitleId"
+                                    android:orientation="vertical">
+
+                                    <LinearLayout
+                                        android:id="@+id/slideSunroofLytId"
+                                        android:layout_width="match_parent"
+                                        android:layout_height="match_parent"
+                                        android:layout_marginLeft="25dp"
+                                        android:orientation="horizontal"
+                                        android:padding="10dp">
+
+                                        <View
+                                            android:layout_width="20dp"
+                                            android:layout_height="20dp"
+                                            android:layout_gravity="center"
+                                            android:background="@drawable/list_dots"
+                                            android:paddingLeft="10dp" />
+
+
+                                        <TextView
+                                            android:layout_width="match_parent"
+                                            android:layout_height="wrap_content"
+                                            android:gravity="left"
+                                            android:paddingLeft="10dp"
+                                            android:singleLine="false"
+                                            android:text="Standard Systems kladmnslmsdag sadkfjlsd gk sadkjgf;dsg asdjgkldjsg"
+                                            android:textColor="@color/white"
+                                            android:textSize="17sp" />
+                                    </LinearLayout>
+
+                                    <LinearLayout
+                                        android:layout_width="match_parent"
+                                        android:layout_height="match_parent"
+                                        android:layout_marginLeft="25dp"
+                                        android:orientation="horizontal"
+                                        android:padding="10dp">
+
+                                        <View
+                                            android:layout_width="20dp"
+                                            android:layout_height="20dp"
+                                            android:layout_gravity="center"
+                                            android:background="@drawable/list_dots"
+                                            android:paddingLeft="10dp" />
+
+
+                                        <TextView
+                                            android:layout_width="match_parent"
+                                            android:layout_height="wrap_content"
+                                            android:gravity="left"
+                                            android:paddingLeft="10dp"
+                                            android:singleLine="false"
+                                            android:text="Standard Systems kladmnslmsdag sadkfjlsd gk sadkjgf;dsg asdjgkldjsg"
+                                            android:textColor="@color/white"
+                                            android:textSize="17sp"
+                                            android:id="@+id/textView" />
+                                    </LinearLayout>
+
+
+                                </LinearLayout>
+
+                            </RelativeLayout>
+
+                            <RelativeLayout
+                                android:layout_width="0dp"
+                                android:layout_height="match_parent"
+                                android:layout_weight="0.5">
+
+                                <TextView
+                                    android:id="@+id/secondTitleId"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_alignParentTop="true"
+                                    android:paddingLeft="25dp"
+                                    android:text="Panoramic roof System"
+                                    android:textColor="@color/colorPrimaryDark"
+                                    android:textSize="25sp" />
+
+                                <LinearLayout
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:layout_below="@+id/secondTitleId"
+                                    android:orientation="vertical">
+
+                                    <LinearLayout
+                                        android:id="@+id/panoramicRoofId"
+                                        android:layout_width="match_parent"
+                                        android:layout_height="match_parent"
+                                        android:layout_marginLeft="25dp"
+                                        android:orientation="horizontal"
+                                        android:padding="10dp">
+
+                                        <View
+                                            android:layout_width="20dp"
+                                            android:layout_height="20dp"
+                                            android:layout_gravity="center"
+                                            android:background="@drawable/list_dots"
+                                            android:paddingLeft="10dp" />
+
+
+                                        <TextView
+                                            android:layout_width="match_parent"
+                                            android:layout_height="wrap_content"
+                                            android:gravity="left"
+                                            android:paddingLeft="10dp"
+                                            android:singleLine="false"
+                                            android:text="Standard Systems kladmnslmsdag sadkfjlsd gk sadkjgf;dsg asdjgkldjsg"
+                                            android:textColor="@color/white"
+                                            android:textSize="17sp" />
+                                    </LinearLayout>
+
+                                    <LinearLayout
+                                        android:layout_width="match_parent"
+                                        android:layout_height="match_parent"
+                                        android:layout_marginLeft="25dp"
+                                        android:orientation="horizontal"
+                                        android:padding="10dp">
+
+                                        <View
+                                            android:layout_width="20dp"
+                                            android:layout_height="20dp"
+                                            android:layout_gravity="center"
+                                            android:background="@drawable/list_dots"
+                                            android:paddingLeft="10dp" />
+
+
+                                        <TextView
+                                            android:id="@+id/textView2"
+                                            android:layout_width="match_parent"
+                                            android:layout_height="wrap_content"
+                                            android:gravity="left"
+                                            android:paddingLeft="10dp"
+                                            android:singleLine="false"
+                                            android:text="Standard Systems kladmnslmsdag sadkfjlsd gk sadkjgf;dsg asdjgkldjsg"
+                                            android:textColor="@color/white"
+                                            android:textSize="17sp" />
+                                    </LinearLayout>
+                                </LinearLayout>
+
+                            </RelativeLayout>
+
+                        </LinearLayout>
+
+                        <LinearLayout
+                            android:id="@+id/thirdLytId"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_below="@+id/firstLytId"
+                            android:layout_marginTop="15dp"
+                            android:orientation="horizontal"
+                            android:padding="10dp"
+                            android:weightSum="1">
+
+                            <RelativeLayout
+                                android:layout_width="0dp"
+                                android:layout_height="match_parent"
+                                android:layout_weight="0.15">
+
+                            </RelativeLayout>
+
+                            <RelativeLayout
+                                android:layout_width="0dp"
+                                android:layout_height="wrap_content"
+                                android:layout_weight="0.7"
+                                android:gravity="center">
+
+                                <TextView
+                                    android:id="@+id/bottomTitleId"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_alignParentTop="true"
+                                    android:paddingLeft="25dp"
+                                    android:text="Tilt Slide Sunroof"
+                                    android:textColor="@color/colorPrimaryDark"
+                                    android:textSize="25sp" />
+
+                                <LinearLayout
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_below="@+id/bottomTitleId"
+                                    android:orientation="vertical">
+
+                                    <LinearLayout
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="wrap_content"
+                                        android:layout_marginLeft="25dp"
+                                        android:orientation="horizontal"
+                                        android:padding="10dp">
+
+                                        <View
+                                            android:layout_width="20dp"
+                                            android:layout_height="20dp"
+                                            android:layout_gravity="center"
+                                            android:background="@drawable/list_dots"
+                                            android:paddingLeft="10dp" />
+
+
+                                        <TextView
+                                            android:layout_width="match_parent"
+                                            android:layout_height="wrap_content"
+                                            android:gravity="left"
+                                            android:paddingLeft="10dp"
+                                            android:singleLine="false"
+                                            android:text="Standard Systems kladmnslmsdag sadkfjlsd gk sadkjgf;dsg asdjgkldjsg"
+                                            android:textColor="@color/white"
+                                            android:textSize="17sp" />
+                                    </LinearLayout>
+
+                                    <LinearLayout
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="wrap_content"
+                                        android:layout_marginLeft="25dp"
+                                        android:orientation="horizontal"
+                                        android:padding="10dp">
+
+                                        <View
+                                            android:layout_width="20dp"
+                                            android:layout_height="20dp"
+                                            android:layout_gravity="center"
+                                            android:background="@drawable/list_dots"
+                                            android:paddingLeft="10dp" />
+
+
+                                        <TextView
+                                            android:layout_width="match_parent"
+                                            android:layout_height="wrap_content"
+                                            android:gravity="left"
+                                            android:paddingLeft="10dp"
+                                            android:singleLine="false"
+                                            android:text="Standard Systems kladmnslmsdag sadkfjlsd gk sadkjgf;dsg asdjgkldjsg"
+                                            android:textColor="@color/white"
+                                            android:textSize="17sp" />
+                                    </LinearLayout>
+                                </LinearLayout>
+
+                            </RelativeLayout>
+
+                            <RelativeLayout
+                                android:layout_width="0dp"
+                                android:layout_height="match_parent"
+                                android:layout_weight="0.15">
+
+                            </RelativeLayout>
+                        </LinearLayout>
+
+                        <Button
+                            android:id="@+id/btnViewSpec"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_below="@+id/thirdLytId"
+                            android:layout_centerHorizontal="true"
+                            android:layout_margin="60dp"
+                            android:background="@color/colorPrimaryDark"
+                            android:freezesText="true"
+                            android:padding="15dp"
+                            android:text="@string/view_spec"
+                            android:textAllCaps="false"
+                            android:textColor="@color/white"
+                            android:textSize="25sp"
+                            android:textStyle="bold" />
+                    </RelativeLayout>
+                </ScrollView>
+
+
+                <ScrollView
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="0.5">
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="vertical">
+
+                        <ImageSwitcher
+                            android:id="@+id/imgSwitcherId"
+                            android:layout_width="match_parent"
+                            android:layout_height="430dp"
+                            android:layout_margin="10dp"
+                            android:background="@android:color/transparent"
+                            android:padding="5dp" />
+
+                        <Gallery
+                            android:id="@+id/galleryId"
+                            android:layout_width="match_parent"
+                            android:layout_height="200dp"
+                            android:background="#55000000"
+                            android:gravity="center_vertical"
+                            android:spacing="16dp" />
+
+                    </LinearLayout>
+
+                </ScrollView>
+            </LinearLayout>
+
+        </android.support.v4.widget.NestedScrollView>
+    </FrameLayout>
+
+
+</LinearLayout>
